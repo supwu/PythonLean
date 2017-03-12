@@ -1,4 +1,4 @@
-#!usr/bin/env python
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
 #import lib
@@ -6,8 +6,14 @@
 #print('hello world')
 import getpass
 
-i1 = input("Username:")
-#i2 = input("Password:")
-i2 = getpass.getpass("Password:")
-print(i1)
-print(i2)
+user = input("Username:")
+pwd = getpass.getpass("Password:")
+
+print(user)
+print(pwd)
+
+if user == "alex" and pwd == "123":
+	print("yes")
+else:
+	print("no")
+	
