@@ -6,11 +6,10 @@ from numpy import exp, array, random, dot
 class NeuralNetwork():
     def __init__(self):
         #随机数发生种子,以保证每次获得相同结果
-        #random.seed(0)
+        random.seed(1)
 
         #得到一个3x1的矩阵,每个数是随机2*（0~1）-1，即-1~1之间的随机数
-        #self.synaptic_weights = 2 * random.random((3,1)) - 1
-        self.synaptic_weights = random.random((3,1))
+        self.synaptic_weights = 2 * random.random((3,1)) - 1
 
     #sigmoid函数，S型曲线
     #用这个函数对输入的加权总和做正规划，使其范围在0~1
